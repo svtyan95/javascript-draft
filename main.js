@@ -25,18 +25,18 @@
 // console.log(Math.ceil(value))
 // console.log(Math.round(value))
 
-// const companyName = "Cyberdyne Systems"
-// const repaitBots = 150
-// const defenceBots = 50
-// const message =
-//   "Cyberdyne Systems has ${repaitBots + defenceBots) bots in stock"
-
-// console.log(message)
-
-const productName = "Droid"
-const pricePerItem = 3500
-
-// Change code below this line
-
+const companyName = "Cyberdyne Systems"
+const repaitBots = 150
+const defenceBots = 50
 const message =
-  "You picked ${productName}, price per item is ${pricePerItem} credits"
+  "Cyberdyne Systems has ${repaitBots + defenceBots) bots in stock"
+
+console.log(message)
+
+// const productName = "Droid"
+// const pricePerItem = 3500
+
+// // Change code below this line
+
+// const message =
+//   "You picked ${productName}, price per item is ${pricePerItem} credits"
