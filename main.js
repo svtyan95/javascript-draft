@@ -1,7 +1,5 @@
-function checkAge(age) {
-  if (age >= 18) { // Change this line
-    return "You are an adult";
-  }
+const a = 5
+const b = 7
+const result = a + b
 
-  return "You are a minor";
-}
+console.log(result)
