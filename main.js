@@ -82,29 +82,43 @@
 // console.log('Сюда Пішов')
 
 
-const totalSpend= 11150;
-let payment = 500;
-let discount = 0;
+// let totalSpend= 150;
+// let payment = 500;
+// let discount = 0;
 
-if (totalSpend >= 100 && totalSpend < 1000) {
-  console.log('Бронзовий партнер, знижка 2%');
-  discount = 0.02;
-}
+// if (totalSpend >= 100 && totalSpend < 1000) {
+//   console.log('Бронзовий партнер, знижка 2%');
+//   discount = 0.02;
+// }
 
-else if (totalSpend >= 1000 && totalSpend < 5000) {
-  console.log('Сріблий партнер, знижка 5%');
-  discount = 0.05;
-}
+// else if (totalSpend >= 1000 && totalSpend < 5000) {
+//   console.log('Сріблий партнер, знижка 5%');
+//   discount = 0.05;
+// }
   
-else if (totalSpend >= 5000){
-  console.log('Золотий партнер, знижка 10%');
-  discount = 0.1;
-}
+// else if (totalSpend >= 5000){
+//   console.log('Золотий партнер, знижка 10%');
+//   discount = 0.1;
+// }
   
-else { 
-  console.log ('Не партрнер, ЗНИЖКА 0%')
-}
+// else { 
+//   console.log ('Не партрнер, ЗНИЖКА 0%')
+// }
 
-console.log(
-  `Оформлюємо заказ на суму ${payment} зі знижкою ${discount * 100}%`
-)
+// payment = payment - payment * discount;
+
+// console.log(
+//   `Оформлюємо заказ на суму ${payment} зі знижкою ${discount * 100}%`
+// )
+
+// totalSpend += payment;
+
+// console.log (`Загальна сума пространих грошей: ${totalSpend}`);
+
+
+// const btnAdd = document.querySelector('button');
+// btnAdd.addEventListener('click', function () {
+//   console.log('click heheheh')
+
+// });
+
