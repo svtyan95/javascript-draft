@@ -118,13 +118,29 @@
 // slice(begin, end) повертає новий масив, що містить копію частини вихідного масиву, не змінюючи його. Копія створюється з begin і до, але не включно, end - індекси елементів вихідного масиву.
 
 
-const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
-console.log(clients.slice(1,)); // ["Ajax", "Poly"]
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// console.log(clients.slice(1,)); // ["Ajax", "Poly"]
 
 
 //додавання
-const colors = ["red", "green", "blue"];
+// const colors = ["red", "green", "blue"];
+// colors.splice(1, 4, "pink");
+// console.log(colors); // ["red", "green", "purple", "blue"]
 
-colors.splice(1, 0, "pink");
-console.log(colors); // ["red", "green", "purple", "blue"]
-SVGAnimatedTransformList
+
+
+// Патерн «Раннє повернення»
+
+function withdraw(amount, balance) {
+  if (amount === 0) {
+    console.log("Для проведення операції введіть суму більшу за нуль");
+  } else if (amount > balance) {
+    console.log("Недостатньо коштів на рахунку");
+  } else {
+    console.log("Операція зняття коштів проведена успішно");
+  }
+}
+
+withdraw(301, 301); // "Для проведення операції введіть суму більшу за нуль"
+withdraw(500, 300); // "Недостатньо коштів на рахунку"
+withdraw(100, 300); // "Операція зняття коштів проведена успішно"
