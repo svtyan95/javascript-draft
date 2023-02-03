@@ -131,16 +131,31 @@
 
 // Патерн «Раннє повернення»
 
-function withdraw(amount, balance) {
-  if (amount === 0) {
-    console.log("Для проведення операції введіть суму більшу за нуль");
-  } else if (amount > balance) {
-    console.log("Недостатньо коштів на рахунку");
-  } else {
-    console.log("Операція зняття коштів проведена успішно");
-  }
-}
+// function withdraw(amount, balance) {
+//   if (amount === 0) {
+//     console.log("Для проведення операції введіть суму більшу за нуль");
+//   } else if (amount > balance) {
+//     console.log("Недостатньо коштів на рахунку");
+//   } else {
+//     console.log("Операція зняття коштів проведена успішно");
+//   }
+// }
 
-withdraw(301, 301); // "Для проведення операції введіть суму більшу за нуль"
-withdraw(500, 300); // "Недостатньо коштів на рахунку"
-withdraw(100, 300); // "Операція зняття коштів проведена успішно"
+// withdraw(301, 301); // "Для проведення операції введіть суму більшу за нуль"
+// withdraw(500, 300); // "Недостатньо коштів на рахунку"
+// withdraw(100, 300); // "Операція зняття коштів проведена успішно"
+
+function filterArray(numbers, value) {
+   // Change code below this line
+let newArray = [];
+
+  for (let number of numbers) {
+
+    if (number > value) {
+      newArray.push(number)
+    }
+  }
+
+  // Change code above this line
+  return newArray
+}
